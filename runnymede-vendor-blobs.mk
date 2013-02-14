@@ -35,6 +35,13 @@ PRODUCT_COPY_FILES += \
     vendor/htc/runnymede/proprietary/etc/firmware/default_mfg.acdb:system/etc/firmware/default_mfg.acdb \
     vendor/htc/runnymede/proprietary/etc/firmware/default_org_wb.acdb:system/etc/firmware/default_org_wb.acdb \
 
+# Sensors
+PRODUCT_COPY_FILES += \
+    vendor/htc/runnymede/proprietary/hw/sensors.runnymede.so:/system/lib/hw/sensors.runnymede.so \
+    vendor/htc/runnymede/proprietary/libmpl.so:obj/lib/libmpl.so \
+    vendor/htc/runnymede/proprietary/libmlplatform.so:obj/lib/libmlplatform.so \
+    vendor/htc/runnymede/proprietary/libmllite.so:obj/lib/libmllite.so
+
 # Wifi/BT firmware
 PRODUCT_COPY_FILES += \
     vendor/htc/runnymede/proprietary/etc/firmware/BCM4330B1_002.001.003.0550.0568.hcd:system/etc/firmware/BCM4330B1_002.001.003.0550.0568.hcd \
