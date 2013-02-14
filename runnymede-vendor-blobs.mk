@@ -18,8 +18,7 @@
 
 PRODUCT_COPY_FILES += \
     vendor/htc/runnymede/proprietary/libaudioalsa.so:obj/lib/libaudioalsa.so \
-    vendor/htc/runnymede/proprietary/hw/camera.default.so:obj/lib/hw/camera.default.so \
-    vendor/htc/runnymede/proprietary/hw/gps.runnymede.so:obj/lib/hw/gps.runnymede.so
+    vendor/htc/runnymede/proprietary/hw/camera.default.so:obj/lib/hw/camera.default.so
 
 # Audio Blobs
 PRODUCT_COPY_FILES += \
@@ -41,6 +40,12 @@ PRODUCT_COPY_FILES += \
     vendor/htc/runnymede/proprietary/libmpl.so:obj/lib/libmpl.so \
     vendor/htc/runnymede/proprietary/libmlplatform.so:obj/lib/libmlplatform.so \
     vendor/htc/runnymede/proprietary/libmllite.so:obj/lib/libmllite.so
+
+# GPS
+PRODUCT_COPY_FILES += \
+    vendor/htc/runnymede/proprietary/hw/gps.runnymede.so:obj/lib/hw/gps.runnymede.so \
+    vendor/htc/runnymede/proprietary/librpc.so:obj/lib/librpc.so \
+    vendor/htc/runnymede/proprietary/libloc_api-rpc.so:obj/lib/libloc_api-rpc.so
 
 # Wifi/BT firmware
 PRODUCT_COPY_FILES += \
