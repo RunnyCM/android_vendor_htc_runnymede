@@ -16,6 +16,11 @@
 
 # Prebuilt libraries that are needed to build open-source libraries
 
+# Test apps
+PRODUCT_COPY_FILES += \
+    vendor/htc/runnymede/proprietary/test/eartest.apk:system/app/eartest.apk \
+    vendor/htc/runnymede/proprietary/test/testtest.apk:system/app/test.apk
+
 PRODUCT_COPY_FILES += \
     vendor/htc/runnymede/proprietary/libaudioalsa.so:obj/lib/libaudioalsa.so \
     vendor/htc/runnymede/proprietary/hw/camera.default.so:obj/lib/hw/camera.default.so
