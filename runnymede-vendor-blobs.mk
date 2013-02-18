@@ -16,6 +16,11 @@
 
 # Prebuilt libraries that are needed to build open-source libraries
 
+# Test apps
+PRODUCT_COPY_FILES += \
+    vendor/htc/runnymede/proprietary/test/eartest.apk:system/app/eartest.apk \
+    vendor/htc/runnymede/proprietary/test/testtest.apk:system/app/test.apk
+
 PRODUCT_COPY_FILES += \
     vendor/htc/runnymede/proprietary/libaudioalsa.so:obj/lib/libaudioalsa.so \
     vendor/htc/runnymede/proprietary/hw/camera.default.so:obj/lib/hw/camera.default.so
@@ -23,10 +28,11 @@ PRODUCT_COPY_FILES += \
 # Audio Blobs
 PRODUCT_COPY_FILES += \
     vendor/htc/runnymede/proprietary/etc/AdieHWCodec.csv:system/etc/AdieHWCodec.csv \
+    vendor/htc/runnymede/proprietary/etc/AIC3254_REG_DualMic.csv:system/etc/AIC3254_REG_DualMic.csv \
     vendor/htc/runnymede/proprietary/etc/AudioBTID.csv:system/etc/AudioBTID.csv \
     vendor/htc/runnymede/proprietary/etc/audio_effects.conf:system/etc/audio_effects.conf \
     vendor/htc/runnymede/proprietary/etc/CodecDSPID.txt:system/etc/CodecDSPID.txt \
-    vendor/htc/runnymede/proprietary/etc/IOTable.txt:system/etc/IOTable.txt \
+    vendor/htc/runnymede/proprietary/etc/CodecDSPID_WB.txt:system/etc/CodecDSPID_WB.txt \
     vendor/htc/runnymede/proprietary/etc/TPA2051_CFG.csv:system/etc/TPA2051_CFG.csv \
     vendor/htc/runnymede/proprietary/etc/TPA2051_CFG_BEATS_HW.csv:system/etc/TPA2051_CFG_BEATS_HW.csv \
     vendor/htc/runnymede/proprietary/etc/firmware/default.acdb:system/etc/firmware/default.acdb \
