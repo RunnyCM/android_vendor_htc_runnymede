@@ -65,6 +65,7 @@ PRODUCT_COPY_FILES += \
     vendor/htc/runnymede/proprietary/bin/snd3254:/system/bin/snd3254 \
     vendor/htc/runnymede/proprietary/lib/libaudioalsa.so:/system/lib/libaudioalsa.so \
     vendor/htc/runnymede/proprietary/lib/libgemini.so:/system/lib/libgemini.so \
+    vendor/htc/runnymede/proprietary/lib/libwvm.so:/system/lib/libwvm.so \
     vendor/htc/runnymede/proprietary/lib/libhtc_acoustic.so:/system/lib/libhtc_acoustic.so \
     vendor/htc/runnymede/proprietary/lib/libhtc_ril.so:/system/lib/libhtc_ril.so
 
