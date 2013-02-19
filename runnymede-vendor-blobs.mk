@@ -60,7 +60,6 @@ PRODUCT_COPY_FILES += \
 
 # misc blobs
 PRODUCT_COPY_FILES += \
-    vendor/htc/runnymede/proprietary/hw/gps.runnymede.so:/system/lib/hw/gps.runnymede.so \
     vendor/htc/runnymede/proprietary/bin/htc_ebdlogd:/system/bin/htc_ebdlogd \
     vendor/htc/runnymede/proprietary/bin/logcat2:/system/bin/logcat2 \
     vendor/htc/runnymede/proprietary/bin/snd3254:/system/bin/snd3254 \
