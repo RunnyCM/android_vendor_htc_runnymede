@@ -17,8 +17,7 @@
 # Prebuilt libraries that are needed to build open-source libraries
 
 PRODUCT_COPY_FILES += \
-    vendor/htc/runnymede/proprietary/libaudioalsa.so:obj/lib/libaudioalsa.so \
-    vendor/htc/runnymede/proprietary/hw/camera.default.so:obj/lib/hw/camera.default.so
+    vendor/htc/runnymede/proprietary/libaudioalsa.so:obj/lib/libaudioalsa.so
 
 # Audio Blobs
 PRODUCT_COPY_FILES += \
