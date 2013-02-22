@@ -17,7 +17,8 @@
 # Prebuilt libraries that are needed to build open-source libraries
 
 PRODUCT_COPY_FILES += \
-    vendor/htc/runnymede/proprietary/lib/libaudioalsa.so:obj/lib/libaudioalsa.so
+    vendor/htc/runnymede/proprietary/lib/libaudioalsa.so:obj/lib/libaudioalsa.so \
+    vendor/htc/runnymede/proprietary/lib/hw/camera.default.so:obj/lib/hw/camera.default.so
 
 # Audio Blobs
 PRODUCT_COPY_FILES += \
@@ -47,17 +48,6 @@ PRODUCT_COPY_FILES += \
     vendor/htc/runnymede/proprietary/lib/librpc.so:system/lib/librpc.so \
     vendor/htc/runnymede/proprietary/lib/libloc_api-rpc.so:system/lib/libloc_api-rpc.so
 
-# Wifi/BT firmware
-PRODUCT_COPY_FILES += \
-    vendor/htc/runnymede/proprietary/etc/firmware/BCM4330B1_002.001.003.0550.0568.hcd:system/etc/firmware/BCM4330B1_002.001.003.0550.0568.hcd \
-    vendor/htc/runnymede/proprietary/etc/firmware/fw_bcm4330_apsta_b1.bin:system/etc/firmware/fw_bcm4330_apsta_b1.bin \
-    vendor/htc/runnymede/proprietary/etc/firmware/fw_bcm4330_apsta_b2.bin:system/etc/firmware/fw_bcm4330_apsta_b2.bin \
-    vendor/htc/runnymede/proprietary/etc/firmware/fw_bcm4330_b2.bin:system/etc/firmware/fw_bcm4330_b2.bin \
-    vendor/htc/runnymede/proprietary/etc/firmware/fw_bcm4330_b1.bin:system/etc/firmware/fw_bcm4330_b1.bin \
-    vendor/htc/runnymede/proprietary/etc/firmware/fw_bcm4330_p2p_b2.bin:system/etc/firmware/fw_bcm4330_p2p_b2.bin \
-    vendor/htc/runnymede/proprietary/etc/firmware/fw_bcm4330_p2p_b1.bin:system/etc/firmware/fw_bcm4330_p2p_b1.bin \
-    vendor/htc/runnymede/proprietary/etc/calibration:system/etc/calibration
-
 # misc blobs
 PRODUCT_COPY_FILES += \
     vendor/htc/runnymede/proprietary/bin/htc_ebdlogd:/system/bin/htc_ebdlogd \
@@ -71,6 +61,7 @@ PRODUCT_COPY_FILES += \
 
 # camera blobs 
 PRODUCT_COPY_FILES += \
+    vendor/htc/runnymede/proprietary/lib/hw/camera.default.so:/system/lib/hw/camera.default.so \
     vendor/htc/runnymede/proprietary/bin/awb_camera:/system/bin/awb_camera \
     vendor/htc/runnymede/proprietary/bin/lsc_camera:/system/bin/lsc_camera \
     vendor/htc/runnymede/proprietary/lib/libcameraface.so:/system/lib/libcameraface.so \
