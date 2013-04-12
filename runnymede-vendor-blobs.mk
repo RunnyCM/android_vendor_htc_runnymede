@@ -20,20 +20,67 @@ PRODUCT_COPY_FILES += \
     vendor/htc/runnymede/proprietary/lib/libaudioalsa.so:obj/lib/libaudioalsa.so \
     vendor/htc/runnymede/proprietary/lib/hw/camera.default.so:obj/lib/hw/camera.default.so
 
+# Wifi/BT firmware
+PRODUCT_COPY_FILES += \
+    vendor/htc/runnymede/proprietary/etc/firmware/default.acdb:system/etc/firmware/default.acdb \
+    vendor/htc/runnymede/proprietary/etc/firmware/default_mfg.acdb:system/etc/firmware/default_mfg.acdb \
+    vendor/htc/runnymede/proprietary/etc/firmware/default_org.acdb:system/etc/firmware/default_org.acdb \
+    vendor/htc/runnymede/proprietary/etc/firmware/default_org_wb.acdb:system/etc/firmware/default_org_wb.acdb \
+    vendor/htc/runnymede/proprietary/etc/firmware/BCM4330B1_002.001.003.0550.0568.hcd:system/etc/firmware/BCM4330B1_002.001.003.0550.0568.hcd \
+    vendor/htc/runnymede/proprietary/etc/firmware/fw_bcmdhd.bin:system/etc/firmware/fw_bcmdhd.bin \
+    vendor/htc/runnymede/proprietary/etc/firmware/fw_bcmdhd_apsta.bin:system/etc/firmware/fw_bcmdhd_apsta.bin \
+    vendor/htc/runnymede/proprietary/etc/firmware/fw_bcmdhd_p2p.bin:system/etc/firmware/fw_bcmdhd_p2p.bin
+
 # Audio Blobs
 PRODUCT_COPY_FILES += \
     vendor/htc/runnymede/proprietary/etc/AdieHWCodec.csv:system/etc/AdieHWCodec.csv \
+    vendor/htc/runnymede/proprietary/etc/AIC3254_REG.csv:system/etc/AIC3254_REG.csv \
     vendor/htc/runnymede/proprietary/etc/AIC3254_REG_DualMic.csv:system/etc/AIC3254_REG_DualMic.csv \
     vendor/htc/runnymede/proprietary/etc/AudioBTID.csv:system/etc/AudioBTID.csv \
-    vendor/htc/runnymede/proprietary/etc/audio_effects.conf:system/etc/audio_effects.conf \
     vendor/htc/runnymede/proprietary/etc/CodecDSPID.txt:system/etc/CodecDSPID.txt \
-    vendor/htc/runnymede/proprietary/etc/CodecDSPID_WB.txt:system/etc/CodecDSPID_WB.txt \
-    vendor/htc/runnymede/proprietary/etc/TPA2051_CFG.csv:system/etc/TPA2051_CFG.csv \
-    vendor/htc/runnymede/proprietary/etc/TPA2051_CFG_BEATS_HW.csv:system/etc/TPA2051_CFG_BEATS_HW.csv \
-    vendor/htc/runnymede/proprietary/etc/firmware/default.acdb:system/etc/firmware/default.acdb \
-    vendor/htc/runnymede/proprietary/etc/firmware/default_org.acdb:system/etc/firmware/default_org.acdb \
-    vendor/htc/runnymede/proprietary/etc/firmware/default_mfg.acdb:system/etc/firmware/default_mfg.acdb \
-    vendor/htc/runnymede/proprietary/etc/firmware/default_org_wb.acdb:system/etc/firmware/default_org_wb.acdb \
+    vendor/htc/runnymede/proprietary/etc/TPA2051_CFG.csv:system/etc/TPA2051_CFG.csv
+
+# Audio DSP Profiles
+PRODUCT_COPY_FILES += \
+    vendor/htc/runnymede/proprietary/etc/soundimage/Sound_Bass_Booster.txt:system/etc/soundimage/Sound_Bass_Booster.txt \
+    vendor/htc/runnymede/proprietary/etc/soundimage/Sound_Blues.txt:system/etc/soundimage/Sound_Blues.txt \
+    vendor/htc/runnymede/proprietary/etc/soundimage/Sound_Classical.txt:system/etc/soundimage/Sound_Classical.txt \
+    vendor/htc/runnymede/proprietary/etc/soundimage/Sound_Country.txt:system/etc/soundimage/Sound_Country.txt \
+    vendor/htc/runnymede/proprietary/etc/soundimage/Sound_Jazz.txt:system/etc/soundimage/Sound_Jazz.txt \
+    vendor/htc/runnymede/proprietary/etc/soundimage/Sound_Latin.txt:system/etc/soundimage/Sound_Latin.txt \
+    vendor/htc/runnymede/proprietary/etc/soundimage/Sound_New_Age.txt:system/etc/soundimage/Sound_New_Age.txt \
+    vendor/htc/runnymede/proprietary/etc/soundimage/Sound_Original_BCLK.txt:system/etc/soundimage/Sound_Original_BCLK.txt \
+    vendor/htc/runnymede/proprietary/etc/soundimage/Sound_Original_Recording_BCLK.txt:system/etc/soundimage/Sound_Original_Recording_BCLK.txt \
+    vendor/htc/runnymede/proprietary/etc/soundimage/Sound_Original_Recording.txt:system/etc/soundimage/Sound_Original_Recording.txt \
+    vendor/htc/runnymede/proprietary/etc/soundimage/Sound_Original_SPK_BCLK.txt:system/etc/soundimage/Sound_Original_SPK_BCLK.txt \
+    vendor/htc/runnymede/proprietary/etc/soundimage/Sound_Original_SPK_MFG.txt:system/etc/soundimage/Sound_Original_SPK_MFG.txt \
+    vendor/htc/runnymede/proprietary/etc/soundimage/Sound_Original_SPK.txt:system/etc/soundimage/Sound_Original_SPK.txt \
+    vendor/htc/runnymede/proprietary/etc/soundimage/Sound_Original.txt:system/etc/soundimage/Sound_Original.txt \
+    vendor/htc/runnymede/proprietary/etc/soundimage/Sound_Phone_Original_HP_BCLK.txt:system/etc/soundimage/Sound_Phone_Original_HP_BCLK.txt \
+    vendor/htc/runnymede/proprietary/etc/soundimage/Sound_Phone_Original_HP.txt:system/etc/soundimage/Sound_Phone_Original_HP.txt \
+    vendor/htc/runnymede/proprietary/etc/soundimage/Sound_Phone_Original_HP_WB.txt:system/etc/soundimage/Sound_Phone_Original_HP_WB.txt \
+    vendor/htc/runnymede/proprietary/etc/soundimage/Sound_Phone_Original_REC_BCLK.txt:system/etc/soundimage/Sound_Phone_Original_REC_BCLK.txt \
+    vendor/htc/runnymede/proprietary/etc/soundimage/Sound_Phone_Original_REC_NEL.txt:system/etc/soundimage/Sound_Phone_Original_REC_NEL.txt \
+    vendor/htc/runnymede/proprietary/etc/soundimage/Sound_Phone_Original_REC.txt:system/etc/soundimage/Sound_Phone_Original_REC.txt \
+    vendor/htc/runnymede/proprietary/etc/soundimage/Sound_Phone_Original_REC_WB.txt:system/etc/soundimage/Sound_Phone_Original_REC_WB.txt \
+    vendor/htc/runnymede/proprietary/etc/soundimage/Sound_Phone_Original_SPK_BCLK.txt:system/etc/soundimage/Sound_Phone_Original_SPK_BCLK.txt \
+    vendor/htc/runnymede/proprietary/etc/soundimage/Sound_Phone_Original_SPK.txt:system/etc/soundimage/Sound_Phone_Original_SPK.txt \
+    vendor/htc/runnymede/proprietary/etc/soundimage/Sound_Phone_Original_SPK_WB.txt:system/etc/soundimage/Sound_Phone_Original_SPK_WB.txt \
+    vendor/htc/runnymede/proprietary/etc/soundimage/Sound_Piano.txt:system/etc/soundimage/Sound_Piano.txt \
+    vendor/htc/runnymede/proprietary/etc/soundimage/Sound_Pop.txt:system/etc/soundimage/Sound_Pop.txt \
+    vendor/htc/runnymede/proprietary/etc/soundimage/Sound_R_B.txt:system/etc/soundimage/Sound_R_B.txt \
+    vendor/htc/runnymede/proprietary/etc/soundimage/Sound_Rec_Landscape.txt:system/etc/soundimage/Sound_Rec_Landscape.txt \
+    vendor/htc/runnymede/proprietary/etc/soundimage/Sound_Recording_Mono.txt:system/etc/soundimage/Sound_Recording_Mono.txt \
+    vendor/htc/runnymede/proprietary/etc/soundimage/Sound_Recording.txt:system/etc/soundimage/Sound_Recording.txt \
+    vendor/htc/runnymede/proprietary/etc/soundimage/Sound_Rec_Portrait.txt:system/etc/soundimage/Sound_Rec_Portrait.txt \
+    vendor/htc/runnymede/proprietary/etc/soundimage/Sound_Rock.txt:system/etc/soundimage/Sound_Rock.txt \
+    vendor/htc/runnymede/proprietary/etc/soundimage/Sound_SRS_A_HP.txt:system/etc/soundimage/Sound_SRS_A_HP.txt \
+    vendor/htc/runnymede/proprietary/etc/soundimage/Sound_SRS_A_SPK.txt:system/etc/soundimage/Sound_SRS_A_SPK.txt \
+    vendor/htc/runnymede/proprietary/etc/soundimage/Sound_SRS_V_HP.txt:system/etc/soundimage/Sound_SRS_V_HP.txt \
+    vendor/htc/runnymede/proprietary/etc/soundimage/Sound_SRS_V_SPK.txt:system/etc/soundimage/Sound_SRS_V_SPK.txt \
+    vendor/htc/runnymede/proprietary/etc/soundimage/Sound_Treble_Booster.txt:system/etc/soundimage/Sound_Treble_Booster.txt \
+    vendor/htc/runnymede/proprietary/etc/soundimage/Sound_Vocal_Booster.txt:system/etc/soundimage/Sound_Vocal_Booster.txt \
+    vendor/htc/runnymede/proprietary/etc/soundimage/Sound_VoIP_HP.txt:system/etc/soundimage/Sound_VoIP_HP.txt \
 
 # Sensors
 PRODUCT_COPY_FILES += \
@@ -58,6 +105,11 @@ PRODUCT_COPY_FILES += \
     vendor/htc/runnymede/proprietary/lib/libwvm.so:/system/lib/libwvm.so \
     vendor/htc/runnymede/proprietary/lib/libhtc_acoustic.so:/system/lib/libhtc_acoustic.so \
     vendor/htc/runnymede/proprietary/lib/libhtc_ril.so:/system/lib/libhtc_ril.so
+
+# Add init.d script & hosts
+PRODUCT_COPY_FILES += \
+    vendor/htc/runnymede/proprietary/etc/init.d/04calibration:system/etc/init.d/04calibration \
+    vendor/htc/runnymede/proprietary/etc/hosts:system/etc/hosts
 
 # camera blobs 
 PRODUCT_COPY_FILES += \
